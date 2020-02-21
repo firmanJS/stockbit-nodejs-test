@@ -2,6 +2,13 @@
 
 running in local manualy
 
+copy environment variabel type in terminal like this 
+
+
+```sh
+cp .env-sample .env
+```
+
 ```sh
 npm install
 ```
