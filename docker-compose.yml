@@ -1,0 +1,19 @@
+version: '3'
+services:
+
+  service_nodejs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks: 
+      stockbit_net:
+    restart: always
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    ports:
+      - "${APP_PORT}:${APP_PORT}"
+
+networks:
+  stockbit_net:
+
